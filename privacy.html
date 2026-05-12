@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Claude Project Pal</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #fafafa; padding: 40px 20px; }
+    .wrap { max-width: 680px; margin: 0 auto; background: white; padding: 48px; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 36px; }
+    .logo-icon { width: 44px; height: 44px; background: #cc785c; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
+    .logo-text h1 { font-size: 18px; font-weight: 700; }
+    .logo-text p { font-size: 13px; color: #666; }
+    h2 { font-size: 18px; font-weight: 700; margin: 32px 0 10px; }
+    p { margin-bottom: 14px; color: #333; }
+    ul { padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; color: #333; }
+    .updated { font-size: 13px; color: #999; margin-bottom: 28px; font-family: ui-monospace, monospace; }
+    a { color: #cc785c; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight { background: #fff8f5; border-left: 3px solid #cc785c; padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 20px 0; font-weight: 600; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th { text-align: left; padding: 8px 12px; background: #f5f5f5; font-weight: 600; }
+    td { padding: 8px 12px; border-top: 1px solid #eee; vertical-align: top; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 13px; color: #999; text-align: center; }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="logo">
+    <div class="logo-icon">🤝</div>
+    <div class="logo-text">
+      <h1>Claude Project Pal</h1>
+      <p>by Daniel Boutros · Soul Arcade</p>
+    </div>
+  </div>
+
+  <h1 style="font-size:26px; font-weight:800; margin-bottom:8px;">Privacy Policy</h1>
+  <p class="updated">Last updated: May 2026</p>
+
+  <div class="highlight">We collect nothing. No data. No tracking. No analytics.</div>
+
+  <h2>What this extension does</h2>
+  <p>Claude Project Pal is a Chrome extension that allows users to upload multiple files to Claude.ai project knowledge in bulk, instead of one file at a time.</p>
+
+  <h2>Data we collect</h2>
+  <p>None. This extension does not collect, store, transmit, or share any personal data, usage data, or analytics of any kind.</p>
+
+  <h2>How the extension works</h2>
+
+  <p><strong>Your files stay local.</strong> Zip files you drop onto the extension are processed entirely within your browser. File contents are never sent to any server other than Claude.ai.</p>
+
+  <p><strong>Claude.ai receives your files.</strong> The extension uploads files directly to Claude.ai using your existing logged-in session — identical to what happens when you upload manually. The extension does not intercept or store the content of these uploads.</p>
+
+  <p><strong>Cookies are used for authentication only.</strong> The extension reads your <code>lastActiveOrg</code> cookie from claude.ai to identify which organisation your project belongs to. This is only used to construct the correct API request and is never transmitted anywhere except claude.ai directly.</p>
+
+  <p><strong>Version checks.</strong> The extension makes one outbound request on popup open to a public GitHub file to check whether a newer version is available. This request contains no user data and no identifying information.</p>
+
+  <h2>Permissions explained</h2>
+  <table>
+    <tr><th>Permission</th><th>Why it's needed</th></tr>
+    <tr><td><code>activeTab</code></td><td>To read the current page URL (for the project ID) and inject the upload script</td></tr>
+    <tr><td><code>scripting</code></td><td>To run the upload function inside the claude.ai tab</td></tr>
+    <tr><td><code>storage</code></td><td>Reserved for future use — currently unused</td></tr>
+    <tr><td><code>host: claude.ai</code></td><td>Required to make API calls to Claude.ai on your behalf</td></tr>
+  </table>
+
+  <h2>Third parties</h2>
+  <p>This extension does not use any third-party analytics, advertising, or tracking services.</p>
+  <p>The version check contacts GitHub (raw.githubusercontent.com). <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub's privacy policy</a> applies to that single request.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted at the same URL and the extension version number will be incremented.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or concerns: <a href="https://github.com/ClaudeProjectPal/ChromeApp/issues" target="_blank">open an issue on GitHub</a> or reach out via <a href="https://buymeacoffee.com/soularcade" target="_blank">Soul Arcade</a>.</p>
+
+  <footer>
+    Claude Project Pal is not affiliated with or endorsed by Anthropic. ·
+    <a href="https://github.com/ClaudeProjectPal/ChromeApp" target="_blank">GitHub</a>
+  </footer>
+
+</div>
+</body>
+</html>
